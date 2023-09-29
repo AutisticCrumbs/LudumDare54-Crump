@@ -1,6 +1,32 @@
-[gd_scene load_steps=2 format=3 uid="uid://djgx5e42w17k6"]
+[gd_scene load_steps=7 format=3 uid="uid://djgx5e42w17k6"]
 
 [ext_resource type="Script" path="res://world/world.gd" id="1_rowmf"]
+[ext_resource type="Texture2D" uid="uid://dw8r1mktb1q1v" path="res://tiles/maze_block.png" id="1_vgtc8"]
+[ext_resource type="PackedScene" uid="uid://dakap1xld2dxa" path="res://gerald/gerald.tscn" id="2_rst4p"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_htaqx"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8a4do"]
+texture = ExtResource("1_vgtc8")
+texture_region_size = Vector2i(50, 50)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25, -25, 25, -25, 25, 25, -25, 25)
+
+[sub_resource type="TileSet" id="TileSet_5im4r"]
+tile_size = Vector2i(50, 50)
+physics_layer_0/collision_layer = 3
+physics_layer_0/collision_mask = 3
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_htaqx")
+sources/2 = SubResource("TileSetAtlasSource_8a4do")
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_rowmf")
+
+[node name="Gerald" parent="." instance=ExtResource("2_rst4p")]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_5im4r")
+format = 2
+layer_0/tile_data = PackedInt32Array(65538, 2, 0, 65539, 2, 0, 65540, 2, 0, 262146, 2, 0, 262147, 2, 0, 262148, 2, 0, 262149, 2, 0, 262150, 2, 0, 262151, 2, 0, 196615, 2, 0, 131079, 2, 0, 65543, 2, 0, 7, 2, 0, -65529, 2, 0, -131065, 2, 0, -131066, 2, 0, -131067, 2, 0, -131068, 2, 0, -131069, 2, 0, -131070, 2, 0, -131071, 2, 0, -131072, 2, 0, -65537, 2, 0, -1, 2, 0, 65535, 2, 0, 131071, 2, 0, 196607, 2, 0, 262143, 2, 0, 327679, 2, 0, 262144, 2, 0, 262145, 2, 0)
