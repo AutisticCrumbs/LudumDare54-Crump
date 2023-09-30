@@ -23,7 +23,6 @@ window/size/extend_to_title=true
 window/size/window_width_override=1000
 window/size/window_height_override=1000
 window/stretch/mode="viewport"
-window/stretch/scale=1.5
 
 [input]
 

@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5ihqqir1tl63"]
+
+[ext_resource type="Script" path="res://title_screen/title_screen.gd" id="1_a1yno"]
+[ext_resource type="Texture2D" uid="uid://6dey0n426nrj" path="res://title_screen/gerald2.png" id="1_i2pvo"]
+
+[node name="TitleScreen" type="CanvasLayer"]
+script = ExtResource("1_a1yno")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 2000.0
+offset_bottom = 2000.0
+color = Color(0.278431, 0.478431, 0.415686, 1)
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -626.5
+offset_top = 200.0
+offset_right = 626.5
+offset_bottom = 488.0
+grow_horizontal = 2
+pivot_offset = Vector2(200, 0)
+theme_override_font_sizes/font_size = 90
+text = "GERALD'S UNHELPFUL GPS"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Description" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 690.0
+offset_right = 768.0
+offset_bottom = 1550.0
+theme_override_font_sizes/font_size = 60
+text = "Gerald lost his glasses and can barely see without them!
+Luckily he has this new GPS that will help him find his glasses, but it seems to be very unhelpful. 
+Let's hope he can find his glasses soon!"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = -500.0
+offset_right = 368.0
+offset_bottom = -382.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+theme_override_font_sizes/font_size = 80
+text = "START!"
+
+[node name="Gerald2" type="Sprite2D" parent="."]
+position = Vector2(1290, 1060)
+scale = Vector2(5, 5)
+texture = ExtResource("1_i2pvo")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
