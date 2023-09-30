@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b5ihqqir1tl63"]
 
 [ext_resource type="Script" path="res://title_screen/title_screen.gd" id="1_a1yno"]
-[ext_resource type="Texture2D" uid="uid://6dey0n426nrj" path="res://title_screen/gerald2.png" id="1_i2pvo"]
+[ext_resource type="Texture2D" uid="uid://cocmflomsfbgp" path="res://title_screen/gerald2.png" id="1_i2pvo"]
 
 [node name="TitleScreen" type="CanvasLayer"]
 script = ExtResource("1_a1yno")
@@ -56,7 +56,7 @@ theme_override_font_sizes/font_size = 80
 text = "START!"
 
 [node name="Gerald2" type="Sprite2D" parent="."]
-position = Vector2(1290, 1060)
+position = Vector2(1280, 1013)
 scale = Vector2(5, 5)
 texture = ExtResource("1_i2pvo")
 

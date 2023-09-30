@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cocmflomsfbgp"
-path="res://.godot/imported/gerald2.png-e19f2a7f0f3fe0ee5c1642f7b41b6685.ctex"
+uid="uid://6l6nr6n8r1t2"
+path="res://.godot/imported/gerald3.png-b59ca70865a545f79eb18a248dbcf10d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://title_screen/gerald2.png"
-dest_files=["res://.godot/imported/gerald2.png-e19f2a7f0f3fe0ee5c1642f7b41b6685.ctex"]
+source_file="res://end_screen/gerald3.png"
+dest_files=["res://.godot/imported/gerald3.png-b59ca70865a545f79eb18a248dbcf10d.ctex"]
 
 [params]
 

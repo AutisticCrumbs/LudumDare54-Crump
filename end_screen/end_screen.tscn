@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://bu26lxbdy11l3"]
+
+[ext_resource type="Texture2D" uid="uid://6l6nr6n8r1t2" path="res://end_screen/gerald3.png" id="1_o7f5n"]
+
+[node name="EndScreen" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 2000.0
+offset_bottom = 2000.0
+color = Color(0.278431, 0.478431, 0.415686, 1)
+
+[node name="Victory" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 450.0
+offset_right = 400.0
+offset_bottom = 730.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 100
+text = "GERALD FOUND HIS GLASSES!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ThanksForPlaying" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -650.0
+offset_right = 400.0
+offset_bottom = -300.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 80
+text = "Thanks for Playing my Ludum Dare 54 Game!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Gerald3" type="Sprite2D" parent="."]
+position = Vector2(1000, 1050)
+scale = Vector2(5, 5)
+texture = ExtResource("1_o7f5n")
