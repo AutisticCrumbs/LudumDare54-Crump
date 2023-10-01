@@ -1,10 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://dubs0hv4py4qf"]
+[gd_scene load_steps=13 format=3 uid="uid://dubs0hv4py4qf"]
 
 [ext_resource type="Texture2D" uid="uid://e564dcj6eqoi" path="res://tiles/grass.png" id="1_seqdt"]
 [ext_resource type="Texture2D" uid="uid://dw8r1mktb1q1v" path="res://tiles/maze_block.png" id="1_vgtc8"]
 [ext_resource type="PackedScene" uid="uid://dakap1xld2dxa" path="res://gerald/gerald.tscn" id="2_rst4p"]
-[ext_resource type="PackedScene" uid="uid://crc17tu0dyhky" path="res://sound_triggers/sad_sound/sad_sound.tscn" id="4_ufunq"]
 [ext_resource type="PackedScene" uid="uid://4t4fjc4n48mo" path="res://sound_triggers/end_area/end_area.tscn" id="5_f882t"]
+[ext_resource type="PackedScene" uid="uid://rbdlfyftoaws" path="res://sound_triggers/single_beep/single_beep.tscn" id="5_hrtl8"]
+[ext_resource type="PackedScene" uid="uid://dwlu6lo6jyec7" path="res://sound_triggers/double_beep/double_beep.tscn" id="6_irkgc"]
+[ext_resource type="PackedScene" uid="uid://deu1nl7uuk021" path="res://sound_triggers/come_on_beep/come_on_beep.tscn" id="7_5aaqy"]
+[ext_resource type="PackedScene" uid="uid://bghi3clu3824k" path="res://sound_triggers/triple_beep/triple_beep.tscn" id="8_r5kg7"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_htaqx"]
 
@@ -41,8 +44,53 @@ layer_0/tile_data = PackedInt32Array(327680, 2, 0, 393216, 2, 0, 458752, 2, 0, 5
 [node name="Gerald" parent="." instance=ExtResource("2_rst4p")]
 position = Vector2(964, 104)
 
-[node name="SadSound" parent="." instance=ExtResource("4_ufunq")]
-position = Vector2(1746, 1607)
-
 [node name="EndArea" parent="." instance=ExtResource("5_f882t")]
-position = Vector2(749, 303)
+position = Vector2(1600, 1062)
+
+[node name="SingleBeep" parent="." instance=ExtResource("5_hrtl8")]
+position = Vector2(1001, 357)
+
+[node name="SingleBeep2" parent="." instance=ExtResource("5_hrtl8")]
+position = Vector2(1745, 350)
+
+[node name="SingleBeep3" parent="." instance=ExtResource("5_hrtl8")]
+position = Vector2(399, 896)
+
+[node name="SingleBeep4" parent="." instance=ExtResource("5_hrtl8")]
+position = Vector2(840, 1501)
+
+[node name="SingleBeep5" parent="." instance=ExtResource("5_hrtl8")]
+position = Vector2(1601, 588)
+
+[node name="SingleBeep6" parent="." instance=ExtResource("5_hrtl8")]
+position = Vector2(1901, 1699)
+
+[node name="SingleBeep7" parent="." instance=ExtResource("5_hrtl8")]
+position = Vector2(1454, 1496)
+
+[node name="SingleBeep8" parent="." instance=ExtResource("5_hrtl8")]
+position = Vector2(402, 1504)
+
+[node name="SingleBeep9" parent="." instance=ExtResource("5_hrtl8")]
+position = Vector2(105, 359)
+
+[node name="DoubleBeep" parent="." instance=ExtResource("6_irkgc")]
+position = Vector2(1231, 650)
+
+[node name="DoubleBeep2" parent="." instance=ExtResource("6_irkgc")]
+position = Vector2(775, 1054)
+
+[node name="DoubleBeep3" parent="." instance=ExtResource("6_irkgc")]
+position = Vector2(1748, 1040)
+
+[node name="DoubleBeep4" parent="." instance=ExtResource("6_irkgc")]
+position = Vector2(852, 805)
+
+[node name="ComeOnBeep" parent="." instance=ExtResource("7_5aaqy")]
+position = Vector2(1446, 1052)
+
+[node name="TripleBeep" parent="." instance=ExtResource("8_r5kg7")]
+position = Vector2(1228, 947)
+
+[node name="TripleBeep2" parent="." instance=ExtResource("8_r5kg7")]
+position = Vector2(1446, 805)

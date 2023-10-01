@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://5oj53is8j2kn"
-path="res://.godot/imported/end_beep.wav-89120b3dc2c102a7b8762d6fa578573a.sample"
+path="res://.godot/imported/end_beep.wav-fced18753287a44dcaf33e69109938ec.sample"
 
 [deps]
 
-source_file="res://sound_triggers/sfx/end_beep.wav"
-dest_files=["res://.godot/imported/end_beep.wav-89120b3dc2c102a7b8762d6fa578573a.sample"]
+source_file="res://sound_triggers/end_area/end_beep.wav"
+dest_files=["res://.godot/imported/end_beep.wav-fced18753287a44dcaf33e69109938ec.sample"]
 
 [params]
 

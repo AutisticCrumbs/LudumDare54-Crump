@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwlu6lo6jyec7"]
+
+[ext_resource type="AudioStream" uid="uid://cp1vqme0p4i11" path="res://sound_triggers/double_beep/double_beep.wav" id="1_3wcdw"]
+[ext_resource type="Script" path="res://sound_triggers/double_beep/double_beep.gd" id="1_ejnjg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_728ss"]
+size = Vector2(50, 50)
+
+[node name="DoubleBeep" type="Area2D"]
+script = ExtResource("1_ejnjg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_728ss")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_3wcdw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

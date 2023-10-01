@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://deu1nl7uuk021"]
+
+[ext_resource type="AudioStream" uid="uid://c4ahrjm74qe1j" path="res://sound_triggers/come_on_beep/come_on_beep.wav" id="1_hj2s5"]
+[ext_resource type="Script" path="res://sound_triggers/come_on_beep/come_on_beep.gd" id="1_v2evh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lbdi"]
+size = Vector2(50, 50)
+
+[node name="ComeOnBeep" type="Area2D"]
+script = ExtResource("1_v2evh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7lbdi")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_hj2s5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
