@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://4t4fjc4n48mo"]
+
+[ext_resource type="Script" path="res://sound_triggers/end_area/end_area.gd" id="1_unvy3"]
+[ext_resource type="AudioStream" uid="uid://5oj53is8j2kn" path="res://sound_triggers/sfx/end_beep.wav" id="2_0dsgy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_80ott"]
+size = Vector2(50, 50)
+
+[node name="EndArea" type="Area2D"]
+script = ExtResource("1_unvy3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_80ott")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_0dsgy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

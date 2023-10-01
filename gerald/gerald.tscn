@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dakap1xld2dxa"]
 
-[ext_resource type="Script" path="res://gerald/Gerald.gd" id="1_rykw1"]
+[ext_resource type="Script" path="res://gerald/gerald.gd" id="1_rykw1"]
 [ext_resource type="Texture2D" uid="uid://dvdfproxoksly" path="res://gerald/gerald1.png" id="2_a4p68"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_66pcu"]
