@@ -3,6 +3,10 @@ Help Gerald find his glasses with his new GPS! The more beeps you hear, the clos
 
 Use WASD or the ARROW KEYS to move.
 
+### Game Jam Link
+
+https://ldjam.com/events/ludum-dare/54/geralds-unhelpful-gps
+
 ### Reflection
 
 For a first game jam, this was pretty exciting to do. This is also a project for my game 
